@@ -1,6 +1,5 @@
 const express = require('express');
-//create an express application
-var app = express();
+var app = express(); //create an express application
 
 //define a route on `/hello/world`.  If user types in '/hello' then that request wouldn't be handled
 
