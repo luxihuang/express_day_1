@@ -21,7 +21,7 @@ app.get('/hello/:firstName/:lastName', function(request,response){
 //Take a word as a parameter and returning the word reversed. https://medium.freecodecamp.org/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb
 app.get('/hello/:string', function(request,response){
     console.log(`got request for reverse string`);
-    const stringParam = request.params.string;
+    const stringParam = request.params.string;  //you can't just do string.split().reverse().join() because the function thinks 'string' is a variable 
 	const reverseString = stringParam.split("").reverse().join("");
 	response.send(`hello ${reverseString}`);
 });
